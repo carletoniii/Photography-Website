@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url(./assets/fonts/Michroma-Regular.ttf);
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mini-bio {
+    font-family: Michroma;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #4b4b4b;
+    margin-top: calc(10px + 1.5%);
+    animation: fadeInEffect 0.75s ease-out forwards;
+
+    @media screen and (max-width: 1200px) {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 5px;
+    }
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    align-self: flex-start;
+    margin-top: 10px;
+
+    @media screen and (max-width: 1200px) {
+        width: 140px;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 120px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+    }
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.bio-h4 {
+    font-size: 16px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 11px;
+    }
+}
+
+.bio-paragraph {
+    margin-top: 15px;
+    font-size: 14px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+}

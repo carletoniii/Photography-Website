@@ -1,0 +1,53 @@
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Use the full height of the viewport */
+    text-align: center;
+    /* Center text for any direct child text elements */
+    animation: fadeInEffect 0.75s ease-out forwards;
+}
+
+/* Additional styling for form and its fields */
+form {
+    width: 100%;
+    /* Adjust this as needed, e.g., max-width: 600px; */
+    max-width: 400px;
+    /* Maximum width of the form */
+}
+
+.form-field {
+    margin-bottom: 20px;
+    /* Adjust spacing between form fields */
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    /* Ensure inputs take full width of the form */
+    padding: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

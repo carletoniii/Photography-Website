@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url(./assets/fonts/Michroma-Regular.ttf);
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    animation: fadeInEffect 0.75s ease-out forwards;
+}
+
+.bottom-bar {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: inline-block;
+    font-family: Michroma;
+    color: #707070;
+    font-size: 15px;
+    font-family: 'Michroma',
+        sans-serif;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url(./assets/fonts/Michroma-Regular.ttf);
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.about-section {
+    text-align: center;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 2.5%;
+    animation: fadeInEffect 0.75s ease-out forwards;
+
+    @media screen and (max-width: 1200px) {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 5px;
+    }
+}
+
+.about-section-title {
+    margin-bottom: 3%;
+    font-family: Michroma;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #4b4b4b;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.about-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-text-section {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: Michroma;
+    color: #4b4b4b;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.about-photo-section {
+    flex: 1;
+    padding: 0 10px;
+    max-width: 30%;
+}
+
+.about-photo-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

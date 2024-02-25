@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url(./assets/fonts/Michroma-Regular.ttf);
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.TitleText {
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: calc(10px + 1%);
+    margin-bottom: calc(10px + 2%);
+    color: #4b4b4b;
+    animation: fadeInEffect 0.75s ease-out forwards;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+}

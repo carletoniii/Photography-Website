@@ -1,0 +1,67 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0; // Remove default margin
+    padding: 0; // Remove default padding
+}
+
+.gallery {
+    width: auto; // Ensure the gallery section takes up the entire width of its container
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.container {
+    width: 100%; // Ensure the container takes up the entire width of its parent element
+    max-width: 100%; // Remove any maximum width limitation
+    margin: 0 auto; // Center the container horizontally
+    box-sizing: border-box; // Include padding and border in the total width
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.gallery-column {
+    margin: 0px;
+}
+
+.gallery-item {
+    flex: 1 0 auto; // Allow items to grow and shrink as needed
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+
+    &.image-loaded {
+        opacity: 1; // Fully opaque when the image is loaded
+    }
+}
+
+.gallery-item img:hover {
+    cursor: zoom-in; // Set magnifying glass cursor when hovering
+}
+
+.lightbox {
+    display: none;
+}
+
+.lightbox.open {
+    display: block;
+}
