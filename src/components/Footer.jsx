@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="bottom-bar">
-                Web Development by Carleton Barrett Foster III
+                Web development and design by Carleton Barrett Foster III
             </div>
         </footer>
     );

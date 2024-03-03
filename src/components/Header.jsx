@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaInstagram, FaBars } from 'react-icons/fa';
+import { FaInstagram, FaBars, FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/logo/CARLETON III Logo.png';
 
 const Header = () => {
@@ -24,9 +24,12 @@ const Header = () => {
     return (
         <header className="header">
             <div className="top-bar">
-                <div className="instagram-link">
+                <div className="social-links">
                     <a href="https://www.instagram.com/carletoniii" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="instagram-icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/carletoniii/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="linkedin-icon" />
                     </a>
                 </div>
             </div>

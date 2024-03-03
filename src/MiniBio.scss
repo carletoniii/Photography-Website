@@ -3,6 +3,11 @@
     src: url(./assets/fonts/Michroma-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Arimo';
+    src: url(./assets/fonts/Arimo-VariableFont_wght.ttf);
+}
+
 @keyframes fadeInEffect {
     from {
         opacity: 0;
@@ -14,7 +19,7 @@
 }
 
 .mini-bio {
-    font-family: Michroma;
+    font-family: Arimo;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 30px;
@@ -26,6 +31,11 @@
     color: #4b4b4b;
     margin-top: calc(10px + 1.5%);
     animation: fadeInEffect 0.75s ease-out forwards;
+
+    a {
+        margin-bottom: 3%;
+        color: #4b4b4b;
+    }
 
     @media screen and (max-width: 1200px) {
         margin-left: 15%;
@@ -71,6 +81,7 @@
 }
 
 .bio-h3 {
+    font-family: michroma;
     font-size: 20px;
     text-transform: uppercase;
 
@@ -83,7 +94,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -105,7 +116,7 @@
 
 .bio-paragraph {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 15px;
 
     @media screen and (max-width: 1200px) {
         font-size: 14px;

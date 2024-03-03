@@ -37,11 +37,13 @@
     @media (max-width: 992px) {
         max-width: 200px;
         margin-left: 20px;
+        margin-bottom: 7.5px;
     }
 
     @media (max-width: 768px) {
-        margin-left: 12.5px; // Adjusted margin for mobile devices
+        margin-left: 15px;
         max-width: 150px;
+        margin-bottom: 7.5px;
     }
 }
 
@@ -52,8 +54,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.instagram-link {
-    margin-right: auto; // Push the Instagram icon to the left
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // Add this line if not already present
+    flex-direction: row;
 }
 
 .instagram-icon {
@@ -61,12 +67,28 @@
     align-items: center;
     font-size: 1.75em; // Adjust the size of the Instagram icon
     color: #d0d0d0; // Adjust the color of the Instagram icon
-    margin-left: 40px;
-    transition: color 1.5s ease;
+    transition: color 1s ease;
+    margin-left: 35px;
 
     @media (max-width: 768px) {
         margin-left: 10px; // Adjusted margin for mobile devices
     }
+
+    &:hover {
+        color: #6e6e6e;
+        transition: color 0.5s ease;
+    }
+}
+
+.linkedin-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.75em; // Adjust the size of the Instagram icon
+    color: #d0d0d0; // Adjust the color of the Instagram icon
+    transition: color 1s ease;
+    margin-left: calc(2px + 2%);
+
+    @media (max-width: 768px) {}
 
     &:hover {
         color: #6e6e6e;
@@ -97,8 +119,8 @@
     max-width: 100%;
 
     @media screen and (max-width: 1200px) {
-        margin-top: calc(10px + 0.5%);
-        margin-bottom: calc(15px + 0.5%);
+        margin-top: 2.5%;
+        margin-bottom: 4%;
     }
 }
 
@@ -167,7 +189,7 @@ nav ul li a {
 
     a {
         color: #4b4b4b;
-        font-size: 15px;
+        font-size: 16px;
         font-family: 'Michroma', sans-serif;
         text-decoration: none;
         transition: color 0.5s ease;
